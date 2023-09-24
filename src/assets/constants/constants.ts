@@ -1,8 +1,12 @@
+/* WORK */
 import { Routes } from "@/app/models/route.module"
 import detox from '../images/Work/DDetox 1.png'
 import canil from '../images/Work/MockupCanil 1.png'
 import petxi from '../images/Work/Petxi 2 1.png'
 import imdb from '../images/Work/IMDb 1.png'
+import vector from '../images/Clouds.svg'
+import days from '../images/Days.svg'
+
 
 
 export const routes: Routes[] = [
@@ -27,6 +31,7 @@ export const dataProject = [
     },
     {
         img: canil,
+        vector1: vector,
         linkWeb: 'https://www.linkedin.com/in/soleyflores/',
         title: 'Canil',
         tags: [
@@ -39,6 +44,7 @@ export const dataProject = [
     },
     {
         img: petxi,
+        vector: days,
         linkWeb: 'https://www.linkedin.com/in/soleyflores/',
         title: 'Petxi',
         span: 'app',
@@ -62,4 +68,13 @@ export const dataProject = [
         subTitle: 'Your Film & Series Guide',
         description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
     }
+]
+/* STAND */
+
+
+
+export const standFor = [
+    {video: './video3.mp4',title: 'Prioritize', subtitle: 'People/', description: "Putting people's needs and experiences first, even when it seems challenging."},
+    {video: './video1.mp4',title: 'Seamless', subtitle: 'Functionality/', description: "Designing for usability that's as reliable as clockwork, ensuring a smooth experience."},
+    {video: './video2.mp4',title: 'Empathy', subtitle: 'Drives Results/', description: "Harnessing empathy to overcome challenges and drive progress for both users and businesses."}
 ]

@@ -1,5 +1,5 @@
 import { BannerFiltro, BannerVideo, BannerDescription} from "./components"
-import{ Work } from "./components"
+import{ Work, StandFor } from "./components"
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <BannerFiltro />
       <BannerDescription />
       <Work/>
+      <StandFor/>
     </>
   )
 }

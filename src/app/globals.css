@@ -87,3 +87,31 @@ strong {
   background-blend-mode: soft-light;
   backdrop-filter: blur(80px);
 }
+.details{
+  border: 1px solid #202124;
+  border-radius: 100px;
+  padding: 10px;
+  min-width:60px;
+}
+#vector{
+  position: absolute;
+  margin-top: -185px;
+}
+#vector1{
+  position: absolute;
+  margin-top: -300px;
+  width: 300px;
+}
+#video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.filter{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 12;
+  background: linear-gradient(180deg, rgba(37, 37, 37, 0.4) 0%, rgba(30, 30, 30, 0.4) 100%);
+backdrop-filter: blur(8px);
+}

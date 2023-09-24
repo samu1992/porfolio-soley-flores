@@ -6,8 +6,15 @@ import petxi from '../images/Work/Petxi 2 1.png'
 import imdb from '../images/Work/IMDb 1.png'
 import vector from '../images/Clouds.svg'
 import days from '../images/Days.svg'
+import linkedInd from '../images/mdi_linkedin.png'
+import behance from '../images/behance.png'
+import instagram from '../images/nstagram.png'
 
-
+export const networks = [
+    {logo:linkedInd, route: "https://www.linkedin.com/in/soleyflores/"},
+    {logo:behance, route: "https://www.linkedin.com/in/soleyflores/"},
+    {logo:instagram, route: "https://www.linkedin.com/in/soleyflores/"}
+]
 
 export const routes: Routes[] = [
     { name: "HOME", route: "/" },

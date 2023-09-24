@@ -16,7 +16,7 @@ const fraunces = Fraunces({
 export default function Work() {
     return (
         <main className="work flex flex-col justify-center items-center py-40 px-44 relative w-full gap-44">
-            <div className="filter absolute w-full h-full z-10" />
+            <div className="filter1 absolute w-full h-full z-10" />
             <article className="relative z-30 w-full flex items-center flex-row justify-start gap-4">
                 <Image alt="point" src={point} />
                 <p>WOR<span className={`${fraunces.className} lowercase`}>k</span></p>

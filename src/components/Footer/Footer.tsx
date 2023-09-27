@@ -21,7 +21,7 @@ export default function Footer() {
                 <div className="flex flex-row items-center justify-center gap-10">
                 {networks.map(({logo, route},index)=>{
                     return(
-                        <Link key={index} href={route}>
+                        <Link target="_blank" key={index} href={route}>
                         <Image alt="logo" src={logo} />
                         </Link>
                     )

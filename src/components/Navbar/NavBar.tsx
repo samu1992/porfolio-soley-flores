@@ -1,8 +1,9 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
+import { useState, useEffect } from 'react';
 import logo from "../../assets/images/Logo.svg"
-import { Route } from "@/app/models/route.module"
+import { Route } from "@/app/models"
 import { routes } from "@/assets/constants/constants"
 import { usePathname } from 'next/navigation'
 import logoButton from "../../assets/images/sparkles.svg"
@@ -11,13 +12,31 @@ import { Fraunces } from "next/font/google"
 const fraunces = Fraunces({
     subsets: ['latin'],
     display: 'swap',
-  })
+})
 
 export default function Navbar() {
-    const pathname = usePathname();
+    const [navbarActive, setNavbarActive] = useState('')
+
+    useEffect(() => {
+        function handleScroll() {
+            if (window.scrollY > 50) {
+                setNavbarActive('navbar--active');
+            } else {
+                setNavbarActive('');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const pathname = usePathname() as Route;
     return (
         <>
-            <nav className='w-full h-10 flex  items-center justify-between p-12 mb-26 sm-px-4 xl:p-8 xl:mt-4 fixed top-0 z-40'>
+            <nav className={`${navbarActive} w-full h-10 flex  items-center justify-between px-12 py-8 sticky top-0 z-50`}>
                 <section>
                     <Link href='./'>
                         <Image alt="Personalice Logo" src={logo} />
@@ -29,7 +48,7 @@ export default function Navbar() {
                             const isActive = pathname === route;
                             return (
                                 <li key={name} className="text-stone-800">
-                                    <Link className={isActive ? 'underline underline-offset-8 text-xs' : 'text-xs text-slate-800'} href={route}>{name}</Link>
+                                    <Link className={isActive ? 'underline underline-offset-8 text-xs' : 'text-xs text-slate-800 cursor-pointer'} href={route}>{name}</Link>
                                 </li>
                             )
                         }

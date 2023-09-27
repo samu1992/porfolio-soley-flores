@@ -2,8 +2,8 @@ import { dataProject } from "@/assets/constants/constants"
 import Image from "next/image"
 import Link from "next/link"
 import svgButton from '../../../assets/images/Work/cursor-arrow-rays.svg'
-import { Fraunces } from "next/font/google"
 import point from '../../../assets/images/Vector.svg'
+import { Fraunces } from "next/font/google"
 
 const fraunces = Fraunces({
     subsets: ['latin'],

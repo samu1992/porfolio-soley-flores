@@ -1,1 +1,2 @@
-export * from './ProfileRecommendation';
+export { default as ProfileRecommendation } from './ProfileRecommendation';
+export * from './index';

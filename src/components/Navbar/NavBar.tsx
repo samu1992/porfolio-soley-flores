@@ -56,7 +56,7 @@ export default function Navbar() {
                     </ul>
                     <button className="flex items-center justify-center flex-row  backgound-button px-2.5 py-1 rounded-lg text-stone-800">
                         <Image className="mr-1.5" width={14} height={14} alt="button logo" src={logoButton} />
-                        LET’S TAL<span className={fraunces.className}>k</span>
+                        <Link target="_blank" href="https://www.linkedin.com/in/soleyflores/">LET’S TAL<span className={fraunces.className}>k</span></Link>
                     </button>
                 </section>
             </nav>

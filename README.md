@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![logo](https://github.com/samu1992/porfolio-soley-flores/blob/master/src/assets/images/Logo.svg)
+
+## Descripcion del Proyecto
+
+Porfolio desarrollado para Soley Flores (Designer UX/UI)
+Este proyecto se basa en React, Next js y TypeScrpt.
+
+En cuanto al desarrollo en sí, se utilizó JavaScript como lenguaje principal y se siguió una metodología de desarrollo basada en componentes, lo que permite una mayor reutilización del código y una mejor organización del proyecto.
+
+### Desarrollado con:
+
+React Js.
+Next Js.
+TypeScript.
+
+![foto](https://github.com/samu1992/porfolio-soley-flores/blob/master/src/assets/images/Frontal.png)
+
 
 ## Getting Started
 

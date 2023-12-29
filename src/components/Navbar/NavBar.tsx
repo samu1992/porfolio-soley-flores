@@ -1,18 +1,14 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import logo from "../../assets/images/Logo.svg"
 import { Route } from "@/app/models"
 import { routes } from "@/assets/constants/constants"
 import { usePathname } from 'next/navigation'
-import logoButton from "../../assets/images/sparkles.svg"
-import { Fraunces } from "next/font/google"
+import NavbarResponsive from "@/components/Navbar/navbarComponents/NavbarResponsive/NavbarResponsive"
+import LetsTalk from "../let'sTalk/let'sTalk"
 
-const fraunces = Fraunces({
-    subsets: ['latin'],
-    display: 'swap',
-})
 
 export default function Navbar() {
     const [navbarActive, setNavbarActive] = useState('')
@@ -36,13 +32,13 @@ export default function Navbar() {
     const pathname = usePathname() as Route;
     return (
         <>
-            <nav className={`${navbarActive} w-full h-10 flex  items-center justify-between px-12 py-8 sticky top-0 z-50`}>
+            <nav className={`${navbarActive} w-full h-10 flex  items-center justify-between py-8 sticky top-0 z-50 px-6 sm:px-8`}>
                 <section>
                     <Link href='./'>
                         <Image alt="Personalice Logo" src={logo} />
                     </Link>
                 </section>
-                <section className="flex items-center justify-center flex-row flex-gap">
+                <section className="hidden items-center justify-center flex-row flex-gap sm:flex">
                     <ul className='flex items-center justify-center flex-row flex-gap text-stone-800'>
                         {routes.map(({ route, name }) => {
                             const isActive = pathname === route;
@@ -54,11 +50,9 @@ export default function Navbar() {
                         }
                         )}
                     </ul>
-                    <button className="flex items-center justify-center flex-row  backgound-button px-2.5 py-1 rounded-lg text-stone-800">
-                        <Image className="mr-1.5" width={14} height={14} alt="button logo" src={logoButton} />
-                        <Link target="_blank" href="https://www.linkedin.com/in/soleyflores/">LET’S TAL<span className={fraunces.className}>k</span></Link>
-                    </button>
+                    <LetsTalk />
                 </section>
+                <NavbarResponsive />
             </nav>
         </>
     )

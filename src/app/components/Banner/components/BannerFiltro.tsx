@@ -1,9 +1,9 @@
 'use client'
 
-export default function Banner() {
+export default function BannerFiltro() {
     return (
         <>
-            <section className="banner-filtro h-2/4">
+            <section className="banner-filtro h-3/4">
                 
             </section>
         </>

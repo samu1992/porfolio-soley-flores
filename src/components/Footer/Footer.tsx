@@ -10,10 +10,10 @@ export default function Footer() {
     return (
         <footer className="flex flex-col items-center justify-center gap-12 p-36">
             <picture>
-                <Image src={logo} alt="logo footer" />
+                <Image className="min-w-64" src={logo} alt="logo footer" />
             </picture>
             <section className="flex flex-col items-center justify-center gap-10">
-                <h2 className="font-bold text-2xl">Wondering if we're a match? Reach Out!</h2>
+                <h2 className="font-bold text-md md:text-2xl">Wondering if we're a match? Reach Out!</h2>
                 <button className="link-footer flex flex-row items-center justify-center gap-4 py-2 px-6 text-lg">
                     soleyflores.ar@gmail.com
                     <Image src={cursorLogo} alt="cursor logo"/>

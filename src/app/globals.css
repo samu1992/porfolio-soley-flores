@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-a{
+a {
   cursor: pointer;
 }
 
@@ -12,12 +12,17 @@ html {
   margin: 0;
   min-width: 100%;
   min-height: 100vh;
-  background: #FFFEEC;
+  background: #fffeec;
 }
 
 .backgound-button {
-  background: #E9FC88;
-  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 6px 0px rgba(103, 110, 118, 0.08);
+  background: #e9fc88;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 0px 1px rgba(103, 110, 118, 0.16),
+    0px 2px 6px 0px rgba(103, 110, 118, 0.08);
+}
+.backgound-button:hover {
+  background: #d7ea76;
 }
 
 .flex-gap {
@@ -34,28 +39,32 @@ span {
 }
 
 strong {
-  color: #BCB4FF;
+  color: #bcb4ff;
 }
 
 .banner-filtro {
   position: absolute;
   top: 0;
   z-index: 35;
-  background-image: url(../assets/images/Texture.png), linear-gradient(180deg, rgba(255, 254, 236, 0.14) 0%, rgba(255, 254, 236, 0.08) 100%);
+  background-image: url(../assets/images/Texture.png),
+    linear-gradient(
+      180deg,
+      rgba(255, 254, 236, 0.14) 0%,
+      rgba(255, 254, 236, 0.08) 100%
+    );
   backdrop-filter: blur(12px);
   background-position: center;
   background-size: cover;
   mix-blend-mode: soft-light;
-  height: 600px;
+  /* height: 600px; */
   width: 100%;
 }
-
 
 .container-video {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 600px;
+  /* height: 600px; */
   overflow: hidden;
   z-index: 10;
 }
@@ -67,8 +76,7 @@ strong {
 }
 
 .work {
-  background: #E9FC88;
-  top: 0;
+  background: #e9fc88;
 }
 
 .filter1 {
@@ -81,55 +89,71 @@ strong {
 
 .link-work {
   border-radius: 10px;
-  border: 1px solid rgba(255, 254, 236, 0.20);
-  background: linear-gradient(180deg, rgba(255, 254, 236, 0.35) 0%, rgba(255, 254, 236, 0.20) 100%);
+  border: 1px solid rgba(255, 254, 236, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 254, 236, 0.35) 0%,
+    rgba(255, 254, 236, 0.2) 100%
+  );
   background-blend-mode: soft-light;
   backdrop-filter: blur(80px);
 }
-.details{
+.link-work:hover{
+  background-color: #bcb4ff;
+}
+.details {
   border-radius: 100px;
-  padding: 10px;
-  min-width:60px;
+  min-width: 60px;
   border: 1px solid var(--Black, #202124);
 }
-#vector{
-  position: absolute;
-  margin-top: -185px;
+.vector {
+  top: -85px;
 }
-#vector1{
+#vector1 {
   position: absolute;
-  margin-top: -300px;
-  width: 300px;
+  top: -199px;
+  width: 200px;
+  z-index: 4;
 }
-#video{
+#video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.filter{
+.filter {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
   z-index: 12;
-  background: linear-gradient(180deg, rgba(131, 127, 127, 0.4) 0%, rgba(127, 124, 124, 0.4) 100%);
-backdrop-filter: blur(8px);
+  background: linear-gradient(
+    180deg,
+    rgba(131, 127, 127, 0.4) 0%,
+    rgba(127, 124, 124, 0.4) 100%
+  );
+  backdrop-filter: blur(8px);
 }
-.link-footer{
+.link-footer {
   border-radius: 10px;
-  background: var(--Green, #E9FC88);
-  
+  background: var(--Green, #e9fc88);
+
   /* Button shadow */
-  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 6px 0px rgba(103, 110, 118, 0.08);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 0px 1px rgba(103, 110, 118, 0.16),
+    0px 2px 6px 0px rgba(103, 110, 118, 0.08);
 }
-.navbar--active{
-  background: linear-gradient(180deg, rgba(255, 254, 236, 0.35) 0%, rgba(255, 254, 236, 0.20) 100%);
+.navbar--active {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 254, 236, 0.35) 0%,
+    rgba(255, 254, 236, 0.2) 100%
+  );
   background-blend-mode: soft-light;
   backdrop-filter: blur(80px);
   height: 50px;
   transition: all 0.5s;
 }
 .angry-grid {
-  display: grid; 
+  display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 100%;
@@ -164,7 +188,7 @@ backdrop-filter: blur(8px);
   grid-row-end: 5;
   grid-column-end: 7;
 }
-#item-3 img{
+#item-3 img {
   display: none;
 }
 #item-4 {
@@ -182,14 +206,46 @@ backdrop-filter: blur(8px);
   grid-column-end: 7;
   margin-left: 50px;
 }
-.index{
+.index {
   width: 50px;
   height: 50px;
   border-radius: 100px;
 }
-.border-b{
+.border-b {
   border-bottom: 1px solid #202124;
 }
-.vector-1{
+.vector-1 {
   bottom: -20px;
+}
+
+.navbar--Responsive {
+  position: absolute;
+  top: -500px;
+  display: none;
+  background: linear-gradient(
+    180deg,
+    rgba(131, 127, 127, 0.4) 0%,
+    rgba(127, 124, 124, 0.4) 100%
+    );
+    backdrop-filter: blur(8px);
+    transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar--Open {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    flex-direction: column;
+    padding: 25px;
+    padding-top: 50px;
+    z-index: 100;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+  }
+}
+.black{
+  border: 1px solid black;
 }

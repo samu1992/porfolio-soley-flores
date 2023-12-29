@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Footer, NavBar } from '@/components'
+import { NavBar, Footer } from '@/components'
 import localFont from "next/font/local"
 
 const myFont = localFont({

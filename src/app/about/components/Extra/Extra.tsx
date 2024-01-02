@@ -13,12 +13,12 @@ const fraunces = Fraunces({
 export default function Extra(){
     return(
         <>
-        <section className="flex justify-center flex-col items-center w-full p-40 gap-10 bg-indigo-300 relative z-20">
-            <div className="w-full flex flex-row gap-4 items-center justify-start">
+        <section className="flex justify-center flex-col items-center w-full py-8 px-8 md:px-24 lg:px-36 xl:px-11 gap-10 bg-indigo-300 relative z-20">
+            <div className="w-full flex flex-row gap-4 items-center justify-start py-5">
                 <Image alt="bullet point" src={point}/>
                 <h4 className='text-white'>FUN <span className={`${fraunces.className}`}>Facts</span></h4>
             </div>
-            <div className='flex flex-row items-start justify-center gap-12'>
+            <div className='flex  flex-wrap lg:flex-row items-start justify-center gap-12'>
                 {extraInfo.map(({text},index)=>{
                     return(
                         <article key={index} className='flex flex-col gap-10 w-60 h-64 bg-white rounded-xl py-7 px-8'>

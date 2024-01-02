@@ -5,8 +5,8 @@ export default function About(){
         <>
         <BannerAbout/>
         <History/>
-        {/* <Extra/>
-        <ProfileRecommendation/> */}
+        <Extra/>
+        <ProfileRecommendation/>
         </>
     )
 }

@@ -221,7 +221,7 @@ strong {
   margin-top: 8rem;
 }
 #item-5 {
-  grid-row-start: 4;
+  grid-row-start: 5;
   grid-column-start: 5;
   grid-row-end: 7;
   grid-column-end: 7;
@@ -237,7 +237,7 @@ strong {
   border-bottom: 1px solid #202124;
 }
 .vector-1 {
-  bottom: -20px;
+  bottom: -14px;
 }
 
 .navbar--Responsive {

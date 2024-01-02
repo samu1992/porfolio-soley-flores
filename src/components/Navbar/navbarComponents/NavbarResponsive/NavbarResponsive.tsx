@@ -3,6 +3,8 @@ import { routes } from "@/assets"
 import Link from "next/link"
 import { useState } from "react"
 import LetsTalk from "@/components/let'sTalk/let'sTalk"
+import { FiMenu } from "react-icons/fi"
+
 
 const NavbarResponsive = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -12,11 +14,7 @@ const NavbarResponsive = () => {
     };
     return (
         <>
-            <button className='absolute right-8 flex items-center justify-center flex-col gap-2 sm:hidden' onClick={() => setMenuOpen(!menuOpen)}>
-                <div className='h-1 bg-zinc-800	rounded-lg w-8'></div>
-                <div className='h-1 bg-zinc-800	rounded-lg w-8'></div>
-                <div className='h-1 bg-zinc-800	rounded-lg w-8'></div>
-            </button>
+            <FiMenu onClick={() => setMenuOpen(!menuOpen)} size='2em' className="absolute right-8 sm:hidden" />
             <nav className={`navbar--Responsive ${menuOpen ? 'navbar--Open' : 'navbar--Closed'}`}>
                 <section className="flex items-center justify-center">
                     <ul className='flex items-center justify-center flex-col flex-gap text-stone-800 mb-6'>
@@ -31,9 +29,9 @@ const NavbarResponsive = () => {
                     </ul>
                 </section>
                 <LetsTalk />
-            </nav> 
-        </> 
-    ) 
+            </nav>
+        </>
+    )
 }
 
 export default NavbarResponsive

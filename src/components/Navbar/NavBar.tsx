@@ -44,7 +44,7 @@ export default function Navbar() {
                             const isActive = pathname === route;
                             return (
                                 <li key={name} className="text-stone-800">
-                                    <Link className={isActive ? 'underline underline-offset-8 text-xs' : 'text-xs text-slate-800 cursor-pointer'} href={route}>{name}</Link>
+                                    <Link target="_blank" className={isActive ? 'underline underline-offset-8 text-xs' : 'text-xs text-slate-800 cursor-pointer'} href={route}>{name}</Link>
                                 </li>
                             )
                         }

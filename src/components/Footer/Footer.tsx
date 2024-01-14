@@ -14,18 +14,15 @@ export default function Footer() {
             </picture>
             <section className="flex flex-col items-center justify-center gap-10">
                 <h2 className="font-bold text-md md:text-2xl">Wondering if we're a match? Reach Out!</h2>
-                <button className="link-footer flex flex-row items-center justify-center gap-4 py-2 px-6 text-lg">
-                    soleyflores.ar@gmail.com
-                    <Image src={cursorLogo} alt="cursor logo"/>
-                </button>
+                <Link className="link-footer flex flex-row items-center justify-center gap-4 py-2 px-6 text-lg" href='mailto:soleyflores.ar@gmail.com'>soleyflores.ar@gmail.com  <Image src={cursorLogo} alt="cursor logo" /></Link>
                 <div className="flex flex-row items-center justify-center gap-10">
-                {networks.map(({logo, route},index)=>{
-                    return(
-                        <Link target="_blank" key={index} href={route}>
-                        <Image alt="logo" src={logo} />
-                        </Link>
-                    )
-                })}
+                    {networks.map(({ logo, route }, index) => {
+                        return (
+                            <Link target="_blank" key={index} href={route}>
+                                <Image alt="logo" src={logo} />
+                            </Link>
+                        )
+                    })}
                 </div>
             </section>
         </footer>

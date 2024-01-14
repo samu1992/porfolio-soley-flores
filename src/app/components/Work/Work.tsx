@@ -30,7 +30,7 @@ export default function Work() {
                             {vector1 && <Image id="vector1" alt="vector" src={vector1} />}
                             <Image className="object-cover rounded-3xl w-96 md:w-auto 2xl:w-96" alt="picture project" src={img} />
                             <button className="link-work absolute left-7 bottom-7 flex flex-row justify-center items-center py-2 px-5">
-                                <Link href={linkWeb} className=" text-white">See Project</Link>
+                                <Link target="_blank" href={linkWeb} className=" text-white">See Project</Link>
                                 <Image src={svgButton} alt="icon button" />
                             </button>
                         </article>
@@ -38,11 +38,11 @@ export default function Work() {
                             <div className="flex items-start flex-col justify-start gap-4">
                                 <h3 className="text-4xl uppercase">{title} <span className={`${fraunces.className} lowercase`}>{span}</span></h3>
                                 <section className="flex flex-row items-center justify-center gap-4">
-                                    {tags.map(({ text, link }, index) =>
+                                    {tags.map(({ text}, index) =>
                                         <div className="details flex justify-center items-center" key={index}>
-                                            <Link className="font-bold text-xs text-center p-3" href={link}>
+                                            <p className="font-bold text-xs text-center p-3">
                                                 {text}
-                                            </Link>
+                                            </p>
                                         </div>
                                     )}
                                 </section>

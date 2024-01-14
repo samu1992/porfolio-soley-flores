@@ -24,20 +24,20 @@ export const networks = [
 
 export const routes: Routes[] = [
     { name: "HOME", route: "/" },
-    { name: "RESUME", route: "https://drive.google.com/drive/u/0/folders/1gR1mP1JUdiruaR0BUypBtbgRKwSj6-U9" },
+    { name: "RESUME", route: "https://drive.google.com/file/d/1umsN3cQo4VdhHZRR4YT3mDwMgNhEU2io/view?usp=drive_link" },
     { name: "ABOUT", route: "/about" }
 ]
 
 export const dataProject = [
     {
         img: detox,
-        linkWeb: 'https://www.linkedin.com/in/soleyflores/',
+        linkWeb: 'https://drive.google.com/file/d/1T6EacQN9HjDfXCLLoyzWPTCuExNaqjhm/view?usp=drive_link',
         title: 'Digital Detox',
         span: 'app',
         tags: [
-            { text: 'Design System', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'UI', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'App redesign', link: 'https://www.linkedin.com/in/soleyflores/' }
+            { text: 'Design System' },
+            { text: 'UI'},
+            { text: 'App redesign' }
         ],
         subTitle: 'Design system',
         description: 'Take control of your screen time. This app empowers you to set focused periods and reclaim your offline moments.'
@@ -45,12 +45,12 @@ export const dataProject = [
     {
         img: canil,
         vector1: vector,
-        linkWeb: 'https://www.linkedin.com/in/soleyflores/',
+        linkWeb: 'https://drive.google.com/file/d/1YUfhb-_yDxL9hli3j3qtm1G903C3curY/view?usp=drive_link',
         title: 'Canil',
         tags: [
-            { text: 'branding', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'logo', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'graphic design', link: 'https://www.linkedin.com/in/soleyflores/' }
+            { text: 'branding' },
+            { text: 'logo'},
+            { text: 'graphic design' }
         ],
         subTitle: 'Pet-Friendly Coffee Shop Branding',
         description: 'Where coffee meets companionship. Discover our heartwarming journey in crafting a welcoming space for coffee lovers and their furry friends, enriched by meaningful initiatives.'
@@ -58,25 +58,25 @@ export const dataProject = [
     {
         img: petxi,
         vector: days,
-        linkWeb: 'https://www.linkedin.com/in/soleyflores/',
+        linkWeb: 'https://drive.google.com/file/d/1OnuMH351PW4RUIOvaO4kwAZjY90qvVe_/view?usp=drive_link',
         title: 'Petxi',
         span: 'app',
         tags: [
-            { text: 'UX/UI', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'app', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'transportation', link: 'https://www.linkedin.com/in/soleyflores/' }
+            { text: 'UX/UI' },
+            { text: 'app' },
+            { text: 'transportation'}
         ],
         subTitle: 'Simplified Pet Travel',
         description: 'Discover the easiest way to journey alongside your best friend. Your passport to seamless adventures with your furry companion!'
     },
     {
         img: imdb,
-        linkWeb: 'https://www.linkedin.com/in/soleyflores/',
+        linkWeb: 'https://drive.google.com/file/d/1VRA8hdFra7eYO4sNt28VLnsa_Xmg_0kD/view?usp=drive_link',
         title: 'IMDB',
         tags: [
-            { text: 'landing page', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'UX/UI', link: 'https://www.linkedin.com/in/soleyflores/' },
-            { text: 'web redesign', link: 'https://www.linkedin.com/in/soleyflores/' }
+            { text: 'landing page' },
+            { text: 'UX/UI' },
+            { text: 'web redesign' }
         ],
         subTitle: 'Your Film & Series Guide',
         description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'

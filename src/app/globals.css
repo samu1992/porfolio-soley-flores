@@ -162,7 +162,7 @@ strong {
 }
 #item-4{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .paragraph{

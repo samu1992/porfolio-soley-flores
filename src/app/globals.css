@@ -181,6 +181,12 @@ strong {
     0px 0px 0px 1px rgba(103, 110, 118, 0.16),
     0px 2px 6px 0px rgba(103, 110, 118, 0.08);
 }
+.link-footer:hover{
+  background-color: #BCB4FF;
+}
+.icon:hover{
+  color: #BCB4FF;
+}
 .navbar--active {
   background: linear-gradient(
     180deg,

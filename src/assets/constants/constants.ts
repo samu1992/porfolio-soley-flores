@@ -6,21 +6,12 @@ import petxi from '../images/Work/Petxi 2 1.png'
 import imdb from '../images/Work/IMDb 1.png'
 import vector from '../images/Clouds.svg'
 import days from '../images/Days.svg'
-import linkedInd from '../images/mdi_linkedin.png'
-import behance from '../images/behance.png'
-import instagram from '../images/nstagram.png'
 import mePicture from '../images/About/IMG_8600 1.png'
 import pino from '../images/About/IMG_20220227_140432 1.png'
 import megan from '../images/About/IMG_0681.png'
 import wally from '../images/About/VID_20211205_154709 1.png'
 
 
-
-export const networks = [
-    { logo: linkedInd, route: "https://www.linkedin.com/in/soleyflores/" },
-    { logo: behance, route: "https://www.behance.net/soleyflores" },
-    { logo: instagram, route: "https://www.instagram.com/baxs_20/" }
-]
 
 export const routes: Routes[] = [
     {name: "Work", route: "#work"},
@@ -86,9 +77,9 @@ export const dataProject = [
 
 
 export const standFor = [
-    { title: 'Prioritize', subtitle: 'People/', description: "Putting people's needs and experiences first, even when it seems challenging." },
-    { title: 'Seamless', subtitle: 'Functionality/', description: "Designing for usability that's as reliable as clockwork, ensuring a smooth experience." },
-    { title: 'Empathy', subtitle: 'Drives Results/', description: "Harnessing empathy to overcome challenges and drive progress for both users and businesses." }
+    {  title: 'Prioritize', subtitle: 'People/', description: "Putting people's needs and experiences first, even when it seems challenging." },
+    {  title: 'Seamless', subtitle: 'Functionality/', description: "Designing for usability that's as reliable as clockwork, ensuring a smooth experience." },
+    {  title: 'Empathy', subtitle: 'Drives Results/', description: "Harnessing empathy to overcome challenges and drive progress for both users and businesses." }
 ]
 
 

@@ -3,8 +3,13 @@
 import Image from "next/image"
 import logo from "../../assets/images/Youdidit.svg"
 import cursorLogo from '../../assets/images/cursor-arrow-rays.svg'
-import { networks } from "@/assets"
 import Link from "next/link"
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaBehance } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+
+
+
 
 export default function Footer() {
     return (
@@ -16,13 +21,15 @@ export default function Footer() {
                 <h2 className="font-bold text-md md:text-2xl">Wondering if we're a match? Reach Out!</h2>
                 <Link className="link-footer flex flex-row items-center justify-center gap-4 py-2 px-6 text-lg" href='mailto:soleyflores.ar@gmail.com'>soleyflores.ar@gmail.com  <Image src={cursorLogo} alt="cursor logo" /></Link>
                 <div className="flex flex-row items-center justify-center gap-10">
-                    {networks.map(({ logo, route }, index) => {
-                        return (
-                            <Link target="_blank" key={index} href={route}>
-                                <Image alt="logo" src={logo} />
-                            </Link>
-                        )
-                    })}
+                    <Link target="_blank" href="https://www.linkedin.com/in/soleyflores/">
+                        <IoLogoLinkedin size={50} className="icon"/>
+                    </Link>
+                    <Link target="_blank" href="https://www.behance.net/soleyflores">
+                        <FaBehance size={50} className="icon"/>
+                    </Link>
+                    <Link target="_blank" href="https://www.instagram.com/baxs_20/">
+                        <FaInstagram size={50} className="icon"/>
+                    </Link>
                 </div>
             </section>
         </footer>

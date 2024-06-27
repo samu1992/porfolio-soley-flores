@@ -14,16 +14,56 @@ html {
   min-height: 100vh;
   background: #fffeec;
 }
+.border{
+  border: 1px solid black;
+}
 
 .backgound-button {
   background: #e9fc88;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.12),
     0px 0px 0px 1px rgba(103, 110, 118, 0.16),
     0px 2px 6px 0px rgba(103, 110, 118, 0.08);
+  position: relative;
+  overflow: hidden;
 }
+
 .backgound-button:hover {
-  background: #d7ea76;
+  background: #BCB4FF;
 }
+
+.link-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.link-text {
+  position: absolute;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover .link-text {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.hover-text {
+  position: absolute;
+  text-align: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover .hover-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 .flex-gap {
   gap: 2rem;
@@ -78,7 +118,7 @@ strong {
   height: 300px;
 }
 .work {
-  background: #e9fc88;
+  background: #FFFEEC;
 }
 
 .filter1 {
@@ -104,8 +144,6 @@ strong {
   background-color: #bcb4ff;
 }
 .details {
-  border-radius: 100px;
-  min-width: 60px;
   border: 1px solid var(--Black, #202124);
 }
 .vector {

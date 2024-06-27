@@ -14,27 +14,22 @@ const fraunces = Fraunces({
 
 export default function StandFor() {
     return (
-        <article className="flex justify-center items-center flex-col relative py-20 px-20 gap-20">
-            <div className="relative z-30 w-full flex items-center flex-row justify-start gap-4">
+        <article className="flex justify-center items-center flex-col relative py-20 px-20 gap-20 bg-[#E9FC88]">
+            <div className="relative z-30 w-full flex items-center flex-row justify-center gap-4">
                 <Image alt="point" src={point} />
-                <p>WHAT I STAND<span className={`${fraunces.className} lowercase`}>for</span></p>
+                <p>What I stan for</p>
             </div>
-            <section className="flex flex-col items-center justify-center gap-6 md:flex-row">
-                {standFor.map(({ title, subtitle, description, video }, index) => {
+            <section className="flex  xl:w-[50%] flex-col content-start gap-[80px]">
+                {standFor.map(({ title, subtitle, description }, index) => {
                     return (
-                        <div key={index} className="flex justify-end items-start flex-col relative z-30 w-56 h-52 rounded-3xl overflow-hidden
-                         md:w-60 md:h-56 xl:w-96 xl:h-80">
-                            <section className="absolute z-10 w-full h-full">
-                                <div className="filter" />
-                                <video autoPlay loop muted id="video">
-                                    <source src={video} type="video/mp4" />
-                                </video>
+                        <div key={index} className="flex  justify-between items-end flex-row relative z-30 overflow-hidden">
+                            <section className="z-40 gap-5 flex justify-between items-end flex-col">
+                                <h3 className="text-start font-bold w-full text-xl xl:text-[40px] text-[#000]">{title}</h3>
+                                <h5 className={`${fraunces.className} text-start font-light w-full text-[#000] text-xl xl:text-4xl`}>{subtitle}</h5>
                             </section>
-                            <section className="z-40 p-10">
-                                <h3 className="text-start w-full text-xl xl:text-4xl text-red-50">{title}</h3>
-                                <h5 className={`${fraunces.className} text-start w-full text-red-50 text-xl xl:text-4xl`}>{subtitle}</h5>
-                                {/* <p className="text-start w-full text-red-50 text-xs w-3/4">{description}</p> */}
-                            </section>
+                            <div className=" flex h-full">
+                                <p className="text-start w-[350px] text-[#000] text-[14px]">{description}</p>
+                            </div>
                         </div>
                     )
                 })}

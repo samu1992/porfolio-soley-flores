@@ -23,9 +23,8 @@ export const networks = [
 ]
 
 export const routes: Routes[] = [
-    { name: "HOME", route: "/" },
-    { name: "RESUME", route: "https://drive.google.com/file/d/1umsN3cQo4VdhHZRR4YT3mDwMgNhEU2io/view?usp=drive_link" },
-    { name: "ABOUT", route: "/about" }
+    {name: "Work", route: "#work"},
+    { name: "About", route: "/about" }
 ]
 
 export const dataProject = [
@@ -87,9 +86,9 @@ export const dataProject = [
 
 
 export const standFor = [
-    { video: './video3.mp4', title: 'Prioritize', subtitle: 'People/', description: "Putting people's needs and experiences first, even when it seems challenging." },
-    { video: './video1.mp4', title: 'Seamless', subtitle: 'Functionality/', description: "Designing for usability that's as reliable as clockwork, ensuring a smooth experience." },
-    { video: './video2.mp4', title: 'Empathy', subtitle: 'Drives Results/', description: "Harnessing empathy to overcome challenges and drive progress for both users and businesses." }
+    { title: 'Prioritize', subtitle: 'People/', description: "Putting people's needs and experiences first, even when it seems challenging." },
+    { title: 'Seamless', subtitle: 'Functionality/', description: "Designing for usability that's as reliable as clockwork, ensuring a smooth experience." },
+    { title: 'Empathy', subtitle: 'Drives Results/', description: "Harnessing empathy to overcome challenges and drive progress for both users and businesses." }
 ]
 
 

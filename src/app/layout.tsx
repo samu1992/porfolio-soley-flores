@@ -1,11 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { NavBar, Footer } from '@/components'
-import localFont from "next/font/local"
+import { Manrope } from 'next/font/google'
 
-const myFont = localFont({
-  src: '../assets/font/Trap-ExtraBold.otf',
-  display: 'swap',
+const myFont = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "200", "300", "400", "500", "600", "700", "800"]
 })
 export const metadata: Metadata = {
   title: 'Soley Flores',

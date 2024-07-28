@@ -21,7 +21,7 @@ export const routes: Routes[] = [
 export const dataProject = [
     {
         img: detox,
-        linkWeb: 'https://drive.google.com/file/d/1T6EacQN9HjDfXCLLoyzWPTCuExNaqjhm/view?usp=drive_link',
+        linkWeb: 'https://www.behance.net/gallery/202891765/Digital-Detox-Design-Sytem',
         title: 'Digital Detox',
         span: 'app',
         tags: [
@@ -35,7 +35,7 @@ export const dataProject = [
     {
         img: canil,
         vector1: vector,
-        linkWeb: 'https://drive.google.com/file/d/1YUfhb-_yDxL9hli3j3qtm1G903C3curY/view?usp=drive_link',
+        linkWeb: 'https://www.behance.net/gallery/144847397/Canil',
         title: 'Canil',
         tags: [
             { text: 'branding' },
@@ -48,7 +48,7 @@ export const dataProject = [
     {
         img: petxi,
         vector: days,
-        linkWeb: 'https://drive.google.com/file/d/1OnuMH351PW4RUIOvaO4kwAZjY90qvVe_/view?usp=drive_link',
+        linkWeb: 'https://www.behance.net/gallery/152072115/Petxi-ProyectoFinal-Flores',
         title: 'Petxi',
         span: 'app',
         tags: [
@@ -61,7 +61,7 @@ export const dataProject = [
     },
     {
         img: imdb,
-        linkWeb: 'https://drive.google.com/file/d/1VRA8hdFra7eYO4sNt28VLnsa_Xmg_0kD/view?usp=drive_link',
+        linkWeb: 'https://www.behance.net/gallery/159736439/UXUI-Case-Study-Redesign-IMDb-website',
         title: 'IMDB',
         tags: [
             { text: 'landing page' },

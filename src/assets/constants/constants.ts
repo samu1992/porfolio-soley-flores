@@ -10,6 +10,8 @@ import mePicture from '../images/About/IMG_8600 1.png'
 import pino from '../images/About/IMG_20220227_140432 1.png'
 import megan from '../images/About/IMG_0681.png'
 import wally from '../images/About/VID_20211205_154709 1.png'
+import iGa from '../images/Work/iGa.png'
+import panificadora from '../images/Work/panificadora.png'
 
 
 
@@ -19,6 +21,27 @@ export const routes: Routes[] = [
 ]
 
 export const dataProject = [
+    {
+        img: iGa,
+        linkWeb: 'https://www.behance.net/gallery/204247201/iGadget-Brand-Guidelines',
+        title: 'iGadget',
+        span: 'app',
+        tags: [
+            { text: 'Brand Guidelines' },
+            { text: 'Logo' }
+        ]
+    },
+    {
+        img: panificadora,
+        linkWeb: 'https://www.behance.net/gallery/204025323/Panificadora-Mauri-Redesign',
+        title: 'Panificadora Mauri',
+        span: 'app',
+        tags: [
+            { text: 'Web' },
+            { text: 'Redesign'},
+            { text: 'Landing Page' }
+        ]
+    },
     {
         img: detox,
         linkWeb: 'https://www.behance.net/gallery/202891765/Digital-Detox-Design-Sytem',

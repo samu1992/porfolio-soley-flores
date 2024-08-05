@@ -43,7 +43,7 @@ export default function Work() {
                                 onMouseEnter={() => handleMouseEnter(index)}
                                 onMouseLeave={() => handleMouseLeave(index)}>
                                 <div className="overflow-hidden rounded-[15px]">
-                                    <Image className={`object-cover w-96 md:w-auto 2xl:w-96 ${hoverImg[index] ? 'transition-transform duration-300 ease-in-out transform scale-110' : ''}`} alt="picture project" src={img} />
+                                    <Image className={`object-cover h-[320px] w-96 md:w-auto 2xl:w-96 ${hoverImg[index] ? 'transition-transform duration-300 ease-in-out transform scale-110' : ''}`} alt="picture project" src={img} />
                                 </div>
                                 <h3 className={`${myFont.className} text-[32px] font-normal text-[#202124]`}>{title}</h3>
                                 <section className="flex flex-row gap-3">

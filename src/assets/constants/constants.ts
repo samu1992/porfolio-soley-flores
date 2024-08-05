@@ -12,6 +12,13 @@ import megan from '../images/About/IMG_0681.png'
 import wally from '../images/About/VID_20211205_154709 1.png'
 import iGa from '../images/Work/iGa.png'
 import panificadora from '../images/Work/panificadora.png'
+import helper from '../images/Work/Helper.png'
+import vintex from '../images/Work/vintex.png'
+import vintexBran from '../images/Work/vintexBran.png'
+
+
+
+
 
 
 
@@ -90,6 +97,40 @@ export const dataProject = [
             { text: 'landing page' },
             { text: 'UX/UI' },
             { text: 'web redesign' }
+        ],
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+    },
+    {
+        img: helper,
+        linkWeb: 'https://www.behance.net/gallery/204555383/The-Ai-Helper-Landing-Page-Early-Stage',
+        title: 'The AI Helper',
+        tags: [
+            { text: 'Landing Page' },
+            { text: 'Web Design' },
+            { text: 'Early Stage' }
+        ],
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+    },
+    {
+        img: vintexBran,
+        linkWeb: 'https://www.behance.net/gallery/204765659/Vintex-Website-Design-Early-Stage',
+        title: 'Vintex',
+        tags: [
+            { text: 'Web Design' },
+            { text: 'Early Stage' }
+        ],
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+    },
+    {
+        img: vintex,
+        linkWeb: 'https://www.behance.net/gallery/204813471/Vintex-Branding',
+        title: 'Vintex Branding',
+        tags: [
+            { text: 'Brand Identity' },
+            { text: 'Logo Design' }
         ],
         subTitle: 'Your Film & Series Guide',
         description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'

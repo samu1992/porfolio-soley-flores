@@ -29,6 +29,40 @@ export const routes: Routes[] = [
 
 export const dataProject = [
     {
+        img: vintexBran,
+        linkWeb: 'https://www.behance.net/gallery/204765659/Vintex-Website-Design-Early-Stage',
+        title: 'Vintex',
+        tags: [
+            { text: 'Web Design' },
+            { text: 'Early Stage' }
+        ],
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+    },
+    {
+        img: vintex,
+        linkWeb: 'https://www.behance.net/gallery/204813471/Vintex-Branding',
+        title: 'Vintex Branding',
+        tags: [
+            { text: 'Brand Identity' },
+            { text: 'Logo Design' }
+        ],
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+    },
+    {
+        img: helper,
+        linkWeb: 'https://www.behance.net/gallery/204555383/The-Ai-Helper-Landing-Page-Early-Stage',
+        title: 'The AI Helper',
+        tags: [
+            { text: 'Landing Page' },
+            { text: 'Web Design' },
+            { text: 'Early Stage' }
+        ],
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+    },
+    {
         img: iGa,
         linkWeb: 'https://www.behance.net/gallery/204247201/iGadget-Brand-Guidelines',
         title: 'iGadget',
@@ -63,17 +97,16 @@ export const dataProject = [
         description: 'Take control of your screen time. This app empowers you to set focused periods and reclaim your offline moments.'
     },
     {
-        img: canil,
-        vector1: vector,
-        linkWeb: 'https://www.behance.net/gallery/144847397/Canil',
-        title: 'Canil',
+        img: imdb,
+        linkWeb: 'https://www.behance.net/gallery/159736439/UXUI-Case-Study-Redesign-IMDb-website',
+        title: 'IMDB',
         tags: [
-            { text: 'branding' },
-            { text: 'logo'},
-            { text: 'graphic design' }
+            { text: 'landing page' },
+            { text: 'UX/UI' },
+            { text: 'web redesign' }
         ],
-        subTitle: 'Pet-Friendly Coffee Shop Branding',
-        description: 'Where coffee meets companionship. Discover our heartwarming journey in crafting a welcoming space for coffee lovers and their furry friends, enriched by meaningful initiatives.'
+        subTitle: 'Your Film & Series Guide',
+        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
     },
     {
         img: petxi,
@@ -90,50 +123,17 @@ export const dataProject = [
         description: 'Discover the easiest way to journey alongside your best friend. Your passport to seamless adventures with your furry companion!'
     },
     {
-        img: imdb,
-        linkWeb: 'https://www.behance.net/gallery/159736439/UXUI-Case-Study-Redesign-IMDb-website',
-        title: 'IMDB',
+        img: canil,
+        vector1: vector,
+        linkWeb: 'https://www.behance.net/gallery/144847397/Canil',
+        title: 'Canil',
         tags: [
-            { text: 'landing page' },
-            { text: 'UX/UI' },
-            { text: 'web redesign' }
+            { text: 'branding' },
+            { text: 'logo'},
+            { text: 'graphic design' }
         ],
-        subTitle: 'Your Film & Series Guide',
-        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
-    },
-    {
-        img: helper,
-        linkWeb: 'https://www.behance.net/gallery/204555383/The-Ai-Helper-Landing-Page-Early-Stage',
-        title: 'The AI Helper',
-        tags: [
-            { text: 'Landing Page' },
-            { text: 'Web Design' },
-            { text: 'Early Stage' }
-        ],
-        subTitle: 'Your Film & Series Guide',
-        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
-    },
-    {
-        img: vintexBran,
-        linkWeb: 'https://www.behance.net/gallery/204765659/Vintex-Website-Design-Early-Stage',
-        title: 'Vintex',
-        tags: [
-            { text: 'Web Design' },
-            { text: 'Early Stage' }
-        ],
-        subTitle: 'Your Film & Series Guide',
-        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
-    },
-    {
-        img: vintex,
-        linkWeb: 'https://www.behance.net/gallery/204813471/Vintex-Branding',
-        title: 'Vintex Branding',
-        tags: [
-            { text: 'Brand Identity' },
-            { text: 'Logo Design' }
-        ],
-        subTitle: 'Your Film & Series Guide',
-        description: 'IMDb, your go-to source for all things movies and TV shows. Explore a world of cinematic details and discover what to watch next!'
+        subTitle: 'Pet-Friendly Coffee Shop Branding',
+        description: 'Where coffee meets companionship. Discover our heartwarming journey in crafting a welcoming space for coffee lovers and their furry friends, enriched by meaningful initiatives.'
     }
 ]
 /* STAND */
